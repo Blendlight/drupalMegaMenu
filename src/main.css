@@ -1,0 +1,68 @@
+.builder
+{
+    border:1px solid black;
+    padding: 10px;
+    margin: -10px;
+    position: relative;
+}
+
+.builder-content
+{
+    background: white;
+    min-height: 400px;
+}
+
+.builder-properties
+{
+    /* background: #ccc; */
+    padding: 10px;
+    /* border: 1px solid gray; */
+    width: 300px;
+    position: absolute;
+    top:100px;
+    right:0;
+}
+
+.builder-element {
+    outline: 1px solid gray;
+    padding: 5px;
+}
+
+.builder-hover
+{
+    outline: 4px solid orange;
+}
+
+.builder-active
+{
+    outline: 2px solid green;
+}
+
+.toolTip-parent
+{
+    position: relative;
+}
+
+.builder-hovertools,.builder-activetools
+{
+    position: absolute;
+    /* top:-100%; */
+    left:0;
+    transform: translate(-4px, -100%);
+    background: orange;
+    color:white;
+    padding: 5px;
+}
+
+.builder-activetools
+{
+    background: green;
+    transform: translate(-2px, -100%);
+
+}
+
+.builder-active.builder-hover
+{
+    box-shadow: 0px 0px 0px 4px orange;
+}
+
